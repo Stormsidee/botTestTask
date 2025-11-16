@@ -9,7 +9,6 @@ from sqlite import *
 # Подключение API бота
 api_key = '8504463121:AAEYCIoS8wQxq4n5AHobArIp1ua6r_jOgP4'
 bot = telebot.TeleBot(api_key)
-"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"
 
 history_storage = SQLiteChatHistory()
 
@@ -28,7 +27,7 @@ def openrouter_response(messages):
             response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
-                "Authorization": "Bearer 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",
+                "Authorization": "Bearer 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",
                 "Content-Type": "application/json",
                 "HTTP-Referer": "openrouter.ai",
                 "X-Title": "Telegram Bot",
