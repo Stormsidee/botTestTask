@@ -27,7 +27,7 @@ def openrouter_response(messages):
             response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
-                "Authorization": "Bearer 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",
+                "Authorization": "Bearer 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",
                 "Content-Type": "application/json",
                 "HTTP-Referer": "openrouter.ai",
                 "X-Title": "Telegram Bot",
@@ -35,7 +35,6 @@ def openrouter_response(messages):
             data=json.dumps({
                 "model": model,
                 "messages": messages,
-                "max_tokens": 100,
             })
             )
 
